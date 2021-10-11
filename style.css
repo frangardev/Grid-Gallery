@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:whitesmoke;
+}
+
+.header{
+    position: absolute;
+}
+.title{
+    color: dimgrey;
+}
+
+.container{
+    width: 95%;
+    height: 100vh;
+    margin: 20px auto;
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: 
+        "card-1 card-1 card-2 card-2 card-3 card-3"
+        "card-1 card-1 card-4 . card-3 card-3"
+        "card-5 . card-4 card-6 card-3 card-3"
+        "card-5 card-7 card-7 card-6 card-8 card-8"
+        ". card-9 card-10 card-10 card-8 card-8"
+        "card-11 card-9 card-10 card-10 . ."
+        ;
+}
+.prueba{
+    border: 5px solid dimgrey;
+}
+
+.img1{
+    /* grid-column: 1 / 2;
+    grid-row: 1/2;
+    background-color: dodgerblue;
+    border: none;
+    width: 80%; */
+    grid-area: card-1;
+    width: 90%;
+    height: 90%;
+    background-color: dodgerblue;
+}
+.img2{
+    width: 65%;
+    grid-area: card-2;
+    background-color: aquamarine ;
+}
+.img3{
+    width: 80%;
+    height: 95%;
+    grid-area: card-3;
+    background-color: blueviolet;
+}
+.img4{
+    width: 80%;
+    height: 60%;
+    grid-area: card-4;
+    background-color: cadetblue;
+}
+.img5{
+    grid-area: card-5;
+    background-color: deeppink;
+}
+.img6{
+    grid-area: card-6;
+    background-color: firebrick;
+}
+.img7{
+    grid-area: card-7;
+    background-color: khaki;
+}
+.img8{
+    grid-area: card-8;
+    background-color: lightcoral;
+}
+.img9{
+    grid-area: card-9;
+    background-color: mediumslateblue;
+}
+.img10{
+    grid-area: card-10;
+    background-color: orchid;
+}
+.img11{
+    grid-area: card-11;
+    background-color: wheat;
+}
