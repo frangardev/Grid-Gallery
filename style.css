@@ -7,17 +7,10 @@ body{
     background-color:whitesmoke;
 }
 
-.header{
-    position: absolute;
-}
-.title{
-    color: dimgrey;
-}
-
 .container{
     width: 95%;
-    max-width: 850px;
-    height: 100vh;
+    max-width: 900px;
+    height: 95vh;
     margin: 20px auto;
     display: grid;
     grid-template: repeat(6, 1fr) / repeat(6, 1fr);
@@ -35,6 +28,9 @@ body{
 .img{
     padding: 10px;
     border: 8px solid black;
+    height: 100%;
+    width: 100%;
+    background-color: white;
 }
 
 .img1{
@@ -46,58 +42,50 @@ body{
     grid-area: card-1;
     width: 90%;
     height: 90%;
-    background-color: dodgerblue;
+    object-fit: cover;
+    object-position: center top;
 }
 .img2{
     width: 65%;
     grid-area: card-2;
-    background-color: aquamarine ;
 }
 .img3{
     width: 80%;
     justify-self: center;
     height: 95%;
     grid-area: card-3;
-    background-color: blueviolet;
 }
 .img4{
     width: 80%;
     height: 80%;
+    padding: 5px;
     grid-area: card-4;
-    background-color: cadetblue;
 }
 .img5{
     width: 130%;
     grid-area: card-5;
-    background-color: deeppink;
 }
 .img6{
     grid-area: card-6;
-    background-color: firebrick;
 }
 .img7{
     width: 50%;
     justify-self: center;
     grid-area: card-7;
-    background-color: khaki;
 }
 .img8{
     height: 120%;
     grid-area: card-8;
-    background-color: lightcoral;
 }
 .img9{
     grid-area: card-9;
-    background-color: mediumslateblue;
 }
 .img10{
     justify-self: center;
     width: 90%;
     grid-area: card-10;
-    background-color: orchid;
 }
 .img11{
     width: 90%;
     grid-area: card-11;
-    background-color: wheat;
 }
