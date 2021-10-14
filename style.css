@@ -16,6 +16,7 @@ body{
 
 .container{
     width: 95%;
+    max-width: 850px;
     height: 100vh;
     margin: 20px auto;
     display: grid;
@@ -31,8 +32,9 @@ body{
         "card-11 card-9 card-10 card-10 . ."
         ;
 }
-.prueba{
-    border: 5px solid dimgrey;
+.img{
+    padding: 10px;
+    border: 8px solid black;
 }
 
 .img1{
@@ -53,17 +55,19 @@ body{
 }
 .img3{
     width: 80%;
+    justify-self: center;
     height: 95%;
     grid-area: card-3;
     background-color: blueviolet;
 }
 .img4{
     width: 80%;
-    height: 60%;
+    height: 80%;
     grid-area: card-4;
     background-color: cadetblue;
 }
 .img5{
+    width: 130%;
     grid-area: card-5;
     background-color: deeppink;
 }
@@ -72,10 +76,13 @@ body{
     background-color: firebrick;
 }
 .img7{
+    width: 50%;
+    justify-self: center;
     grid-area: card-7;
     background-color: khaki;
 }
 .img8{
+    height: 120%;
     grid-area: card-8;
     background-color: lightcoral;
 }
@@ -84,10 +91,13 @@ body{
     background-color: mediumslateblue;
 }
 .img10{
+    justify-self: center;
+    width: 90%;
     grid-area: card-10;
     background-color: orchid;
 }
 .img11{
+    width: 90%;
     grid-area: card-11;
     background-color: wheat;
 }
